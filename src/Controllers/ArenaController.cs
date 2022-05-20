@@ -39,6 +39,7 @@ namespace toc_arena.Controllers
 
         }
 
+        [Topic("pubsub", "battle")]
         [HttpPost("punches")]
         async public void Punches([FromBody] CloudEvent<PunchData> message)
         {
